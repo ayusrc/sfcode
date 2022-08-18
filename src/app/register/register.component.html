@@ -1,0 +1,44 @@
+<form (ngSubmit)="postData(form)" [formGroup]="form" action="" id="login_form">
+
+  <div class="form-row">
+    <label for="name">Name</label>
+    <input formControlName="name" id="name" spellcheck="false" type="text">
+  </div>
+  <div class="form-row">
+    <label for="username">Username</label>
+    <input formControlName="username" id="username" spellcheck="false" type="text">
+  </div>
+  <div class="form-row">
+    <label for="email">Email</label>
+    <input formControlName="email" id="email" spellcheck="false" type="text">
+  </div>
+  <div class="form-row">
+    <label for="password">Password</label>
+    <input formControlName="password" id="password" spellcheck="false" type="password">
+  </div>
+  <div class="form-row">
+    <label for="confirm_password">Confirm Password</label>
+    <input formControlName="confirm_password" id="confirm_password" spellcheck="false" type="password">
+  </div>
+
+  <div class="form-row">
+    <input id="submit" type="submit" value="Submit">
+  </div>
+</form>
+
+<div id="cover">
+  <div class="popup" id="success">
+    <div class="title">Success</div>
+    <p class="desc">
+      Registered successfully. You can login now to continue.
+    </p>
+  </div>
+
+  <div class="popup" id="error">
+    <div class="title">Error</div>
+    <p class="desc">
+      An error encountered while submitting the query. Please check your network and for the validity of the
+      information.
+    </p>
+  </div>
+</div>

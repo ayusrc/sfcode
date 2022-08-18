@@ -1,0 +1,90 @@
+.card {
+  margin: 20px 20px;
+  border-bottom: 1px solid var(--color);
+  padding: 15px;
+  background: var(--dark);
+
+  .title {
+    padding: 10px 10px;
+    font-size: 1.2em;
+  }
+
+  .details, .attempt {
+    margin: 10px;
+  }
+
+  .stats {
+    display: inline-block;
+    opacity: 0.9;
+  }
+}
+
+#count {
+  margin: 20px;
+  font-size: 1.5em;
+}
+
+.head {
+  display: block;
+  text-align: center;
+  justify-content: space-around;
+
+  button {
+    font-size: 1.2rem;
+  }
+}
+
+.loginPopup {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.formPopup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, 5%);
+  z-index: 9;
+  background-color: var(--gc2);
+}
+
+.formContainer {
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+
+  textarea {
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    margin: 5px 0 20px 0;
+    padding: 5px 20px 5px 20px;
+  }
+}
+
+.formContainer input {
+  display: inline-block;
+  width: 80%;
+  height: 25px;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 20px;
+  margin: 5px 0 20px 0;
+  padding: 5px 20px 5px 20px;
+}
+
+.formContainer .btn {
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.formContainer .btn:hover,
+.openButton:hover {
+  opacity: 1
+}

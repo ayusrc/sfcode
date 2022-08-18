@@ -1,0 +1,32 @@
+<form (ngSubmit)="postData(form)" [formGroup]="form" action="" id="login_form" novalidate>
+
+  <div class="form-row">
+    <label for="username">Username</label>
+    <input formControlName="username" id="username" spellcheck="false" type="text">
+  </div>
+  <div class="form-row">
+    <label for="password">Password</label>
+    <input formControlName="password" id="password" spellcheck="false" type="password">
+  </div>
+
+  <div class="form-row">
+    <input id="submit" type="submit" value="Submit">
+  </div>
+</form>
+
+<div id="cover">
+  <div class="popup" id="success">
+    <div class="title">Success</div>
+    <p class="desc">
+      Submitted the query successfully. Resetting the form to the initial values.
+    </p>
+  </div>
+
+  <div class="popup" id="error">
+    <div class="title">Error</div>
+    <p class="desc">
+      An error encountered while submitting the query. Please check your network and for the validity of the
+      information.
+    </p>
+  </div>
+</div>

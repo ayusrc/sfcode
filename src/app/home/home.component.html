@@ -1,0 +1,40 @@
+<div class="head">
+  <div id="count">{{ques_final.length}} questions available right now!</div>
+  <button (click) = "openForm()">Post a Problem</button>
+</div>
+
+<div class="loginPopup">
+  <div class="formPopup" id="popupForm">
+    <form class="formContainer" id="quesform" (ngSubmit) = "submitForm()">
+
+      <input type="text" id="title" placeholder="Problem Title" name="title" [(ngModel)]="questiontoPost.title" required>
+      <textarea id="statement" placeholder="Problem Statement" name="statement" rows="8" cols="80" [(ngModel)]="questiontoPost.statement" required></textarea>
+      <textarea id="tc1_i" cols="30" rows="8" name="tc1" placeholder="Testcase1 Input" style="margin-right: 20px;" [(ngModel)]="questiontoPost.tc1"></textarea>
+      <textarea id="tc2_i" cols="30" rows="8" name="tc2" placeholder="Testcase2 Input" style="margin-left: 20px;" [(ngModel)]="questiontoPost.tc2"></textarea>
+      <textarea id="tc1_o" cols="30" rows="4" name="out1" placeholder="Testcase1 Output" style="margin-right: 20px;" [(ngModel)]="questiontoPost.out1"></textarea>
+      <textarea id="tc2_o" cols="30" rows="4" name="out2" placeholder="Testcase2 Output" style="margin-left: 20px;" [(ngModel)]="questiontoPost.out2"></textarea>
+
+      <input type="datetime-local" name="stime" id="start_time" [(ngModel)]="questiontoPost.stime">
+      <input type="datetime-local" name="etime" id="end_time" [(ngModel)]="questiontoPost.etime">
+      
+      <button type="submit" class="btn" (click) = "submitForm()">Submit</button>
+      <button type="button" class="btn cancel" (click) ="closeForm()">Close</button>
+    </form>
+  </div>
+</div>
+
+<div style="padding-bottom: 20px;" *ngFor="let question of ques_final" class="card">
+  <div class="title">{{question.title}}</div>
+  <div style="float: right; padding-bottom: 20px;">Author: {{ question.username }}</div>
+  <br>
+  <div class="details">{{question.statement | slice:0:300 }} ...</div>
+  <div style="float: right;" class="details">Available During: {{question.stime}} - {{question.etime}}</div>
+
+  <button [routerLink]="['/arena/question', question.title]" class="attempt">Attempt</button>
+
+  <!-- <button [routerLink]="['/arena/problem', problem.id]" class="attempt">Attempt</button>  -->
+  <!-- <span class="stats"><span *ngIf="problem.n_attempts != 0">{{problem.n_correct}} accepted out of
+    {{problem.n_attempts}}
+    ({{problem.n_correct / problem.n_attempts * 100}}%)</span><span *ngIf="problem.n_attempts === 0">No attempt
+      yet</span></span> -->
+</div>

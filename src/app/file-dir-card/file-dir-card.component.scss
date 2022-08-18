@@ -1,0 +1,47 @@
+.card {
+  display: grid;
+  grid-template-columns: 30% 20% 50%;
+  height: 3em;
+  border-bottom: 1px solid #fff;
+
+  button {
+    float: right;
+    border: none;
+    user-select: none;
+  }
+
+  .title {
+    padding: 1em 20px;
+
+    input {
+      background: none;
+      border: none;
+      border-bottom: 1px solid #ddf;
+      font: inherit;
+      color: inherit;
+      width: 60%;
+
+      &::placeholder {
+        font-size: 0.8em;
+      }
+    }
+
+    label {
+      font-size: 0.9em;
+      padding: 5px;
+      background: #202;
+      border-radius: 5px;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+
+  .dir-desc {
+    padding: 1.1em 20px;
+    font-size: 0.8em;
+  }
+
+  .file-buttons {
+    padding: 0.7em 20px;
+  }
+}

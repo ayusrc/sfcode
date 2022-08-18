@@ -1,0 +1,1017 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>temp documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">temp documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>HomeComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/home/home.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-home</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./home.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./home.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#errorMessage">errorMessage</a>
+                            </li>
+                            <li>
+                                <a href="#ques_final">ques_final</a>
+                            </li>
+                            <li>
+                                <a href="#questions">questions</a>
+                            </li>
+                            <li>
+                                <a href="#questiontoPost">questiontoPost</a>
+                            </li>
+                            <li>
+                                <a href="#user">user</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#closeForm">closeForm</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openForm">openForm</a>
+                            </li>
+                            <li>
+                                <a href="#organizeQues">organizeQues</a>
+                            </li>
+                            <li>
+                                <a href="#resetForm">resetForm</a>
+                            </li>
+                            <li>
+                                <a href="#submitForm">submitForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dataService: <a href="../injectables/ApiService.html">ApiService</a>, questionService: <a href="../injectables/QuestionService.html">QuestionService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/home/home.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dataService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApiService.html" target="_self" >ApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>questionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/QuestionService.html" target="_self" >QuestionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeForm"></a>
+                    <span class="name">
+                        <b>
+                            closeForm
+                        </b>
+                        <a href="#closeForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/home/home.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/home/home.component.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openForm"></a>
+                    <span class="name">
+                        <b>
+                            openForm
+                        </b>
+                        <a href="#openForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/home/home.component.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="organizeQues"></a>
+                    <span class="name">
+                        <b>
+                            organizeQues
+                        </b>
+                        <a href="#organizeQues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>organizeQues()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/app/home/home.component.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetForm"></a>
+                    <span class="name">
+                        <b>
+                            resetForm
+                        </b>
+                        <a href="#resetForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/app/home/home.component.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="submitForm"></a>
+                    <span class="name">
+                        <b>
+                            submitForm
+                        </b>
+                        <a href="#submitForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>submitForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/home/home.component.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="errorMessage"></a>
+                        <span class="name">
+                            <b>
+                            errorMessage</b>
+                            <a href="#errorMessage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/home/home.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ques_final"></a>
+                        <span class="name">
+                            <b>
+                            ques_final</b>
+                            <a href="#ques_final"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Question.html" target="_self" >Question[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/home/home.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="questions"></a>
+                        <span class="name">
+                            <b>
+                            questions</b>
+                            <a href="#questions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Question.html" target="_self" >Question[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/home/home.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="questiontoPost"></a>
+                        <span class="name">
+                            <b>
+                            questiontoPost</b>
+                            <a href="#questiontoPost"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Question.html" target="_self" >Question</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    title: &quot;&quot;,
+    username: &quot;&quot;,
+    statement: &quot;&quot;,
+    tc1: &quot;&quot;,
+    out1: &quot;&quot;,
+    tc2: &quot;&quot;,
+    out2: &quot;&quot;,
+    stime: &quot;&quot;,
+    etime: &quot;&quot;
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/home/home.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="user"></a>
+                        <span class="name">
+                            <b>
+                            user</b>
+                            <a href="#user"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/User.html" target="_self" >User</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/home/home.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit} from &#x27;@angular/core&#x27;;
+// import {ProblemService} from &#x27;../problem.service&#x27;;
+import { ApiService } from &#x27;../api.service&#x27;;
+// import {Problem} from &#x27;../problem&#x27;;
+import { User } from &#x27;../user&#x27;;
+import { Question } from &#x27;../question&#x27;;
+import { QuestionService } from &#x27;../question.service&#x27;;
+
+@Component({
+  selector: &#x27;app-home&#x27;,
+  templateUrl: &#x27;./home.component.html&#x27;,
+  styleUrls: [&#x27;./home.component.scss&#x27;]
+})
+export class HomeComponent implements OnInit {
+
+  user: User;
+  // problems: Problem[];
+  questiontoPost: Question &#x3D; {
+    title: &quot;&quot;,
+    username: &quot;&quot;,
+    statement: &quot;&quot;,
+    tc1: &quot;&quot;,
+    out1: &quot;&quot;,
+    tc2: &quot;&quot;,
+    out2: &quot;&quot;,
+    stime: &quot;&quot;,
+    etime: &quot;&quot;
+  };
+
+  questions: Question[];
+  ques_final: Question[] &#x3D; [];
+  errorMessage: any;
+
+  constructor(private dataService: ApiService,
+    private questionService: QuestionService) {
+  }
+
+  ngOnInit(): void {
+    this.user &#x3D; JSON.parse(this.dataService.getToken());
+    this.questiontoPost.username &#x3D; this.user.username;
+    // this.getProblems();
+
+    this.questionService.getQues()
+      .subscribe(data &#x3D;&gt; {
+        this.questions &#x3D; data;
+        // console.log(this.questions);
+        this.organizeQues();
+      },
+      error &#x3D;&gt; this.errorMessage &#x3D; &lt;any&gt;error
+    );
+  }
+
+  organizeQues(): void {
+    this.questions.forEach(element &#x3D;&gt; {
+      let d &#x3D; new Date();
+      let s &#x3D; new Date(element.stime);
+      let e &#x3D; new Date(element.etime);
+      if(s &lt; d &amp;&amp; e &gt; d) {
+        this.ques_final.push(element);
+      }
+    });
+
+    // console.log(this.ques_final);
+  }
+
+  // getProblems(): void {
+  //   this.problemService.getProblems()
+  //     .subscribe(problems &#x3D;&gt; this.problems &#x3D; problems);
+  // }
+
+  openForm(): void {
+    document.getElementById(&#x27;popupForm&#x27;).style.display &#x3D; &#x27;block&#x27;;
+  }
+
+  closeForm(): void {
+    document.getElementById(&#x27;popupForm&#x27;).style.display &#x3D; &#x27;none&#x27;;
+  }
+
+  resetForm(): void {
+    this.questiontoPost &#x3D; {
+      title: &quot;&quot;,
+      username: this.user.username,
+      statement: &quot;&quot;,
+      tc1: &quot;&quot;,
+      out1: &quot;&quot;,
+      tc2: &quot;&quot;,
+      out2: &quot;&quot;,
+      stime: &quot;&quot;,
+      etime: &quot;&quot;
+    };
+  }
+
+  submitForm() {
+    this.questiontoPost.stime &#x3D; this.questiontoPost.stime.split(&#x27;T&#x27;).join(&#x27; &#x27;);
+    this.questiontoPost.etime &#x3D; this.questiontoPost.etime.split(&#x27;T&#x27;).join(&#x27; &#x27;);
+    this.questionService.uploadQues(this.questiontoPost).subscribe(
+      (event: any) &#x3D;&gt; {
+        if (typeof (event) &#x3D;&#x3D;&#x3D; &#x27;object&#x27;) {
+          this.questiontoPost &#x3D; null;
+          (document.getElementById(&#x27;quesform&#x27;) as HTMLInputElement).value &#x3D; &#x27;&#x27;;
+        }
+        let s &#x3D; new Date(this.questiontoPost.stime);
+        let d &#x3D; new Date();
+        console.log(d);
+        let e &#x3D; new Date(this.questiontoPost.etime);
+        if(s &lt; d &amp;&amp; d &lt; e) {
+          this.ques_final.push(this.questiontoPost);
+        }
+        this.resetForm();
+        this.closeForm();
+      },
+      (err) &#x3D;&gt; {
+        alert(&quot;Question Already exists!&quot;);
+      }
+    );
+    
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;head&quot;&gt;
+  &lt;div id&#x3D;&quot;count&quot;&gt;{{ques_final.length}} questions available right now!&lt;/div&gt;
+  &lt;button (click) &#x3D; &quot;openForm()&quot;&gt;Post a Problem&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;loginPopup&quot;&gt;
+  &lt;div class&#x3D;&quot;formPopup&quot; id&#x3D;&quot;popupForm&quot;&gt;
+    &lt;form class&#x3D;&quot;formContainer&quot; id&#x3D;&quot;quesform&quot; (ngSubmit) &#x3D; &quot;submitForm()&quot;&gt;
+
+      &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;title&quot; placeholder&#x3D;&quot;Problem Title&quot; name&#x3D;&quot;title&quot; [(ngModel)]&#x3D;&quot;questiontoPost.title&quot; required&gt;
+      &lt;textarea id&#x3D;&quot;statement&quot; placeholder&#x3D;&quot;Problem Statement&quot; name&#x3D;&quot;statement&quot; rows&#x3D;&quot;8&quot; cols&#x3D;&quot;80&quot; [(ngModel)]&#x3D;&quot;questiontoPost.statement&quot; required&gt;&lt;/textarea&gt;
+      &lt;textarea id&#x3D;&quot;tc1_i&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;8&quot; name&#x3D;&quot;tc1&quot; placeholder&#x3D;&quot;Testcase1 Input&quot; style&#x3D;&quot;margin-right: 20px;&quot; [(ngModel)]&#x3D;&quot;questiontoPost.tc1&quot;&gt;&lt;/textarea&gt;
+      &lt;textarea id&#x3D;&quot;tc2_i&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;8&quot; name&#x3D;&quot;tc2&quot; placeholder&#x3D;&quot;Testcase2 Input&quot; style&#x3D;&quot;margin-left: 20px;&quot; [(ngModel)]&#x3D;&quot;questiontoPost.tc2&quot;&gt;&lt;/textarea&gt;
+      &lt;textarea id&#x3D;&quot;tc1_o&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;4&quot; name&#x3D;&quot;out1&quot; placeholder&#x3D;&quot;Testcase1 Output&quot; style&#x3D;&quot;margin-right: 20px;&quot; [(ngModel)]&#x3D;&quot;questiontoPost.out1&quot;&gt;&lt;/textarea&gt;
+      &lt;textarea id&#x3D;&quot;tc2_o&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;4&quot; name&#x3D;&quot;out2&quot; placeholder&#x3D;&quot;Testcase2 Output&quot; style&#x3D;&quot;margin-left: 20px;&quot; [(ngModel)]&#x3D;&quot;questiontoPost.out2&quot;&gt;&lt;/textarea&gt;
+
+      &lt;input type&#x3D;&quot;datetime-local&quot; name&#x3D;&quot;stime&quot; id&#x3D;&quot;start_time&quot; [(ngModel)]&#x3D;&quot;questiontoPost.stime&quot;&gt;
+      &lt;input type&#x3D;&quot;datetime-local&quot; name&#x3D;&quot;etime&quot; id&#x3D;&quot;end_time&quot; [(ngModel)]&#x3D;&quot;questiontoPost.etime&quot;&gt;
+      
+      &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn&quot; (click) &#x3D; &quot;submitForm()&quot;&gt;Submit&lt;/button&gt;
+      &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn cancel&quot; (click) &#x3D;&quot;closeForm()&quot;&gt;Close&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style&#x3D;&quot;padding-bottom: 20px;&quot; *ngFor&#x3D;&quot;let question of ques_final&quot; class&#x3D;&quot;card&quot;&gt;
+  &lt;div class&#x3D;&quot;title&quot;&gt;{{question.title}}&lt;/div&gt;
+  &lt;div style&#x3D;&quot;float: right; padding-bottom: 20px;&quot;&gt;Author: {{ question.username }}&lt;/div&gt;
+  &lt;br&gt;
+  &lt;div class&#x3D;&quot;details&quot;&gt;{{question.statement | slice:0:300 }} ...&lt;/div&gt;
+  &lt;div style&#x3D;&quot;float: right;&quot; class&#x3D;&quot;details&quot;&gt;Available During: {{question.stime}} - {{question.etime}}&lt;/div&gt;
+
+  &lt;button [routerLink]&#x3D;&quot;[&#x27;/arena/question&#x27;, question.title]&quot; class&#x3D;&quot;attempt&quot;&gt;Attempt&lt;/button&gt;
+
+  &lt;!-- &lt;button [routerLink]&#x3D;&quot;[&#x27;/arena/problem&#x27;, problem.id]&quot; class&#x3D;&quot;attempt&quot;&gt;Attempt&lt;/button&gt;  --&gt;
+  &lt;!-- &lt;span class&#x3D;&quot;stats&quot;&gt;&lt;span *ngIf&#x3D;&quot;problem.n_attempts !&#x3D; 0&quot;&gt;{{problem.n_correct}} accepted out of
+    {{problem.n_attempts}}
+    ({{problem.n_correct / problem.n_attempts * 100}}%)&lt;/span&gt;&lt;span *ngIf&#x3D;&quot;problem.n_attempts &#x3D;&#x3D;&#x3D; 0&quot;&gt;No attempt
+      yet&lt;/span&gt;&lt;/span&gt; --&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./home.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.card {
+  margin: 20px 20px;
+  border-bottom: 1px solid var(--color);
+  padding: 15px;
+  background: var(--dark);
+
+  .title {
+    padding: 10px 10px;
+    font-size: 1.2em;
+  }
+
+  .details, .attempt {
+    margin: 10px;
+  }
+
+  .stats {
+    display: inline-block;
+    opacity: 0.9;
+  }
+}
+
+#count {
+  margin: 20px;
+  font-size: 1.5em;
+}
+
+.head {
+  display: block;
+  text-align: center;
+  justify-content: space-around;
+
+  button {
+    font-size: 1.2rem;
+  }
+}
+
+.loginPopup {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.formPopup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, 5%);
+  z-index: 9;
+  background-color: var(--gc2);
+}
+
+.formContainer {
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+
+  textarea {
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    margin: 5px 0 20px 0;
+    padding: 5px 20px 5px 20px;
+  }
+}
+
+.formContainer input {
+  display: inline-block;
+  width: 80%;
+  height: 25px;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 20px;
+  margin: 5px 0 20px 0;
+  padding: 5px 20px 5px 20px;
+}
+
+.formContainer .btn {
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.formContainer .btn:hover,
+.openButton:hover {
+  opacity: 1
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="head">  <div id="count">{{ques_final.length}} questions available right now!</div>  <button (click) = "openForm()">Post a Problem</button></div><div class="loginPopup">  <div class="formPopup" id="popupForm">    <form class="formContainer" id="quesform" (ngSubmit) = "submitForm()">      <input type="text" id="title" placeholder="Problem Title" name="title" [(ngModel)]="questiontoPost.title" required>      <textarea id="statement" placeholder="Problem Statement" name="statement" rows="8" cols="80" [(ngModel)]="questiontoPost.statement" required></textarea>      <textarea id="tc1_i" cols="30" rows="8" name="tc1" placeholder="Testcase1 Input" style="margin-right: 20px;" [(ngModel)]="questiontoPost.tc1"></textarea>      <textarea id="tc2_i" cols="30" rows="8" name="tc2" placeholder="Testcase2 Input" style="margin-left: 20px;" [(ngModel)]="questiontoPost.tc2"></textarea>      <textarea id="tc1_o" cols="30" rows="4" name="out1" placeholder="Testcase1 Output" style="margin-right: 20px;" [(ngModel)]="questiontoPost.out1"></textarea>      <textarea id="tc2_o" cols="30" rows="4" name="out2" placeholder="Testcase2 Output" style="margin-left: 20px;" [(ngModel)]="questiontoPost.out2"></textarea>      <input type="datetime-local" name="stime" id="start_time" [(ngModel)]="questiontoPost.stime">      <input type="datetime-local" name="etime" id="end_time" [(ngModel)]="questiontoPost.etime">            <button type="submit" class="btn" (click) = "submitForm()">Submit</button>      <button type="button" class="btn cancel" (click) ="closeForm()">Close</button>    </form>  </div></div><div style="padding-bottom: 20px;" *ngFor="let question of ques_final" class="card">  <div class="title">{{question.title}}</div>  <div style="float: right; padding-bottom: 20px;">Author: {{ question.username }}</div>  <br>  <div class="details">{{question.statement | slice:0:300 }} ...</div>  <div style="float: right;" class="details">Available During: {{question.stime}} - {{question.etime}}</div>  <button [routerLink]="[\'/arena/question\', question.title]" class="attempt">Attempt</button>  <!-- <button [routerLink]="[\'/arena/problem\', problem.id]" class="attempt">Attempt</button>  -->  <!-- <span class="stats"><span *ngIf="problem.n_attempts != 0">{{problem.n_correct}} accepted out of    {{problem.n_attempts}}    ({{problem.n_correct / problem.n_attempts * 100}}%)</span><span *ngIf="problem.n_attempts === 0">No attempt      yet</span></span> --></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ArenaComponent', 'selector': 'app-arena'},{'name': 'FileComponent', 'selector': 'app-file'},{'name': 'FileDirCardComponent', 'selector': 'app-file-dir-card'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'IdeCompileComponent', 'selector': 'app-ide-compile'},{'name': 'IdeComponent', 'selector': 'app-ide'},{'name': 'InputComponent', 'selector': 'app-input'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SaveFileComponent', 'selector': 'app-save-file'},{'name': 'SubmitTryCodeComponent', 'selector': 'app-submit-try-code'},{'name': 'UserComponent', 'selector': 'app-user'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HomeComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HomeComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

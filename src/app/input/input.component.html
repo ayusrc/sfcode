@@ -1,0 +1,9 @@
+<div [class.open]="isActive" id="input-cover"></div>
+
+<div [class.open]="isActive" id="input">
+  <label for="inp" id="title">Enter the input:</label>
+  <br>
+  <textarea cols="30" id="inp" name="inp" rows="10" spellcheck="false"></textarea>
+  <br>
+  <button (click)="this.setState(false);" id="done">Done</button>
+</div>

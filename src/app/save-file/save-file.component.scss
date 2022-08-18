@@ -1,0 +1,52 @@
+#save-popup {
+  position: fixed;
+  top: 50%;
+  width: 30vw;
+  left: calc(35vw - 20px);
+  border-bottom: 1px solid #ddf;
+  padding: 20px;
+  background: #224;
+  transform: translateY(-50%) scale(0);
+  opacity: 0;
+  transition: all 0.25s;
+  z-index: 1000;
+
+  &.open {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+#filenameInput {
+  box-sizing: border-box;
+  width: 100%;
+  color: #ddf;
+  font-size: 1.05em;
+  background: transparent;
+  border: none;
+  font-family: Lato, sans-serif;
+}
+
+#filenameInputLabel {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#save-done, #save-cancel {
+  float: right;
+  margin: 0 2px;
+}
+
+#save-cover {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+
+  &.open {
+    display: block;
+  }
+}

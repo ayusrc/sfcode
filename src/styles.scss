@@ -1,0 +1,123 @@
+@import "./assets/codemirror/codemirror-5.58.2/lib/codemirror.css";
+@import "./assets/codemirror/codemirror-5.58.2/theme/material-ocean.css";
+@import "../node_modules/chart.js/dist/Chart.css";
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://cdn.linearicons.com/free/1.0.0/icon-font.min.css');
+
+* {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --color: #ddf;
+  --bgcolor: #112;
+  --box-shadow: #002;
+  --gc1: #111133;
+  --gc2: #111166;
+  --dark: #0004;
+  --mix: #111144;
+  --tbg: #ddf1;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0 10px var(--box-shadow);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  background: linear-gradient(45deg, var(--gc1), var(--gc2)) no-repeat fixed;
+  margin: 0;
+  padding: 0;
+}
+
+body>*,
+button {
+  font-family: 'Lato', sans-serif;
+  color: var(--color);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*::selection {
+  background: var(--color);
+  color: var(--bgcolor);
+}
+
+button {
+  position: relative;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color);
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.1s;
+  z-index: 1;
+
+  &::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #ddf;
+    transition: all 0.1s;
+  }
+
+  &:hover {
+    color: var(--bgcolor);
+
+    &::after {
+      height: 100%;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.2;
+    cursor: default;
+
+    &:hover {
+      background: transparent;
+      color: #eef;
+
+      &::after {
+        height: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.inline-code,
+.code {
+  background-color: var(--dark);
+  padding: 10px;
+  border: var(--color) 1px solid;
+  white-space: pre;
+  font-family: 'Anonymous Pro', monospace;
+  margin: 20px 0;
+}
+
+.inline-code {
+  display: inline;
+  padding: 0 5px;
+  margin: 0;
+}
+
+.code {
+  overflow: auto;
+}
+
+a {
+  color: var(--color);
+  transition: all 0.25s;
+}

@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="card" id="ps">
+    <h3 [innerHtml]="title"></h3>
+    <div id="p_s"></div>
+  </div>
+  <div id="toggle-lang">C++</div>
+  <div id="attempt">
+<!--    <button id="input" (click)="inputField.setState(true)">Custom Input</button>-->
+<!--    <button id="try" (click)="tryCode(0)" [class.disabled]="compilationError || isCompiling">{{compilationError ? 'Error' : (isCompiling ? 'Compiling...' : 'Try Code')}}</button>-->
+    <button id="submit" (click)="tryCode(1)" [class.disabled]="compilationError || isCompiling">{{compilationError ? 'Error' : (isCompiling ? 'Compiling...' : 'Submit Code')}}</button>
+  </div>
+  <label for="editor"></label>
+  <textarea id="editor" name="editor"></textarea>
+</div>
+<app-input (valueEmit)="customInput = $event"></app-input>
+<app-submit-try-code [question]="question"></app-submit-try-code>

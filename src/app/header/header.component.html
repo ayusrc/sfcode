@@ -1,0 +1,8 @@
+<nav>
+  <a *ngIf="!loggedIn" routerLink="/register" routerLinkActive="active">Register</a>
+  <a *ngIf="!loggedIn" routerLink="/login" routerLinkActive="active">Login</a>
+  <a *ngIf="loggedIn" routerLink="/home" routerLinkActive="active">Home</a>
+  <a *ngIf="loggedIn" routerLink="/arena" routerLinkActive="active">Arena</a>
+  <a *ngIf="loggedIn" routerLink="/files" routerLinkActive="active">Files</a>
+  <a *ngIf="loggedIn" routerLink="/user" routerLinkActive="active">User</a>
+</nav>

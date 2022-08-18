@@ -1,0 +1,17 @@
+body {
+  --color: #ddf;
+  --bgcolor: #112;
+  --box-shadow: #002;
+  --gc1: #111133;
+  --gc2: #111166;
+  --dark: #0004;
+
+  .light {
+    --color: #112;
+    --bgcolor: #ddf;
+    --box-shadow: #88a;
+    --gc1: #8888aa;
+    --gc2: #8888ee;
+    --dark: #8884;
+  }
+}

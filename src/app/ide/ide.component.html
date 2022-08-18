@@ -1,0 +1,23 @@
+<div id="ide-cover" *ngIf="loadingFile">
+  <div id="ide-cover-text">
+    Loading file...
+  </div>
+</div>
+
+<div class="container">
+  <div id="toggle-lang" [class.disabled]="isSaved">C++</div>
+  <div id="attempt">
+    <span *ngIf="!isUpToDate">• </span>
+    <span id="ideFileName">{{optimizeURI(file.path)}}{{file.filename + file.language}}</span>
+    <button (click)="inputField.setState(true);" id="inputBtn">Input</button>
+    <button (click)="runFile()" id="runBtn" [class.disabled]="isCompiling || isError">{{isError ? 'Error' : (isCompiling ? 'Compiling...' : 'Run File')}}</button>
+    <button (click)="!isSaved ? this.saveField.setState(true) : updateFile();"
+            [class.disabled]="isUploading || isUpToDate"
+            id="saveBtn">{{isUploading ? "Saving File..." : "Save File"}}</button>
+  </div>
+  <label for="editor"></label>
+  <textarea id="editor" name="editor" value="{{inp}}"></textarea>
+</div>
+<app-input (valueEmit)="updateInput($event)"></app-input>
+<app-ide-compile [statusVal]="runCodeService.runStatus"></app-ide-compile>
+<app-save-file (savedFile)="isSaved = isUpToDate = true;" [file]="file"></app-save-file>

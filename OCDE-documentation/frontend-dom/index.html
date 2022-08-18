@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>temp documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	      <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">temp documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<h2 id="introduction">Introduction</h2>
+<p>This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 10.1.6. It is expected to be run along with with <a href="https://www.apachefriends.org/download.html">XAMPP</a> on a linux (Ubuntu) computer.
+This project has mainly 3 kind of code files : Angular code files (for frontend), PHP scripts (for backend) and MySQL script (for backend).</p>
+<h2 id="clone-repository">Clone Repository</h2>
+<p>After installing Angular CLI (version 10.1.6) and XAMPP on your linux computer, clone/save this <a href="https://git.cse.iitb.ac.in/ayushjangir/sfcode/">project repository/directory</a> inside the <code>/opt/lampp/htdocs/</code> directory.
+Make sure that you recursively change the permissions for the <code>sfcode/</code> directory (project directory) and its subdirectories (It is recommended that they be set to 777).</p>
+<h2 id="set-up-backend">Set Up Backend</h2>
+<p>Start the XAMPP servers by going into <code>/opt/lampp</code> directory and using the command <code>./xampp start</code> as a superuser. </p>
+<p>Now, if you are using XAMPP for this project for the first time, the follow these steps:</p>
+<ol>
+<li>Open your browser and go to the adress <code>http://localhost/phpmyadmin/</code> and create a MySQL database with name <em>ssl_database</em>.</li>
+<li>Go into the created database and import the script present in <code>backend/database.sql</code> script from the project repository, which create two tables : <em>users</em> and <em>questions</em>.</li>
+</ol>
+<h2 id="start-angular-server">Start Angular Server</h2>
+<p>Open a terminal in the project directory, <code>/opt/lampp/htdocs/sfcode</code>. Now, follow these steps:</p>
+<ol>
+<li>Use <code>npm install</code>.</li>
+<li>Use <code>ng build</code> to build the project.</li>
+<li>Use <code>ng serve</code> to start angular server at <code>http://localhost:4200/</code>. If you wish to make the website to be available to your local network, use <div><pre class="line-numbers"><code class="language-none">ng serve --host local_ip --port port_no</code></pre></div>Here, <em>local_ip</em> is your computer&#39;s local ip adress and <em>port_no</em> is the port number (default value 4200) at which the website will be hosted. Use the ip adress <em>0.0.0.0</em> to make it available from any network. Note that the XAMPP server is already running while you are following the above three steps. The XAMPP server can also be started after starting the angular server, using <code>./xampp start</code> command in the <code>/opt/lampp/</code> directory.</li>
+</ol>
+<p>Now, you can open the website on your browser and the default Registration/Login page will open. </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="./js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="./js/menu-wc.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

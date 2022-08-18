@@ -1,0 +1,14 @@
+<div [class.open]="isActive" id="save-cover"></div>
+
+<div [class.open]="isActive" id="save-popup">
+  <div *ngIf="!isUploading">
+    <label for="filenameInput" id="filenameInputLabel">Enter Filename:</label><br>
+    <input [(ngModel)]="file.filename" id="filenameInput" name="filenameInput" type="text">
+    <span>{{file.language}}</span>
+    <br>
+    <button (click)="isActive = false" id="save-cancel">Cancel</button>
+    <button (click)="file.filename !== '' && submitFile()" [class.disabled]="file.filename === ''" id="save-done">Done
+    </button>
+  </div>
+  <div *ngIf="isUploading">Uploading...</div>
+</div>

@@ -1,0 +1,72 @@
+#compile-popup {
+  position: fixed;
+  top: 50%;
+  width: 50vw;
+  left: calc(25vw - 20px);
+  border-bottom: 1px solid #ddf;
+  padding: 20px;
+  background: #224;
+  transform: translateY(-50%) scale(0);
+  opacity: 0;
+  transition: all 0.25s;
+  z-index: 1000;
+
+  &.open {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+#compile-done {
+  float: right;
+}
+
+#compile-cover {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+
+  &.open {
+    display: block;
+  }
+}
+
+#testcase-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.testcase-status-div {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  color: #ddf;
+  border-bottom: 1px solid #ddf;
+  animation: blink 1s infinite;
+
+  &.failed {
+    animation: none;
+    border-color: #802;
+    background-color: #8028;
+  }
+
+  &.successful {
+    animation: none;
+    border-color:#082;
+    background-color: #0828;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ddf;
+  }
+}

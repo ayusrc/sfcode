@@ -1,0 +1,7 @@
+<div [class.open]="isActive" id="compile-cover"></div>
+
+<div [class.open]="isActive" id="compile-popup">
+  <p [innerHTML]="statusVal" id="compile-status"></p>
+  <button (click)="setState(false)" id="compile-done">Done
+  </button>
+</div>

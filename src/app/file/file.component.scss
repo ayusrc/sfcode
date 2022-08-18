@@ -1,0 +1,104 @@
+#tray {
+  text-align: center;
+  width: 100%;
+
+  button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+.container {
+  margin-bottom: 20px;
+}
+
+.card {
+  padding: 15px;
+  background: var(--dark);
+  border-bottom: 1px solid #fff;
+
+  button {
+    float: right;
+    border: none;
+  }
+
+  .title {
+    padding: 10px 20px;
+    font-size: 1.1em;
+  }
+
+  .details {
+    margin: 10px;
+  }
+
+  .lang {
+    margin: 10px;
+  }
+}
+
+#file-upload-popup {
+  position: fixed;
+  top: calc(40vh - 100px);
+  width: 30vw;
+  left: calc(35vw - 20px);
+  border-bottom: 1px solid #ddf;
+  padding: 20px;
+  background: #224;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.25s;
+  z-index: 1000;
+
+  a {
+    font-size: 0.7em;
+  }
+
+  &.open {
+    transform: none;
+    opacity: 1;
+  }
+
+  #file-upload-input {
+    font-family: inherit;
+    position: relative;
+
+    &::-webkit-file-upload-button {
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #ddf;
+      padding: 5px 10px;
+      font-family: Lato, sans-serif;
+      color: #ddf;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    margin: 0 10px 20px 0;
+  }
+}
+
+#file-upload-btn, #upload-cancel-btn {
+  float: right;
+  margin: 10px 2px 0 2px;
+}
+
+#file-upload-cover {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  transition: all 0.25s;
+
+  &.open {
+    display: block;
+    background: #0015;
+  }
+}

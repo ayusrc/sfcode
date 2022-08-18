@@ -1,0 +1,10 @@
+<div [class.open]="isActive" id="compile-cover"></div>
+
+<div [class.open]="isActive" id="compile-popup">
+  <div id="testcase-grid">
+    <div *ngFor="let i of nts" class="testcase-status-div" [class.failed]="status[i] === -1" [class.successful]="status[i] === 1">Testcase {{i}}</div>
+  </div>
+  <div>
+    <button id="compile-done" (click)="isActive = false;">Done</button>
+  </div>
+</div>

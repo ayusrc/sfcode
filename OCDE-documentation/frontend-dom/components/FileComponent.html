@@ -1,0 +1,1509 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>temp documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">temp documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>FileComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/file/file.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-file</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./file.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./file.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#creatingNew">creatingNew</a>
+                            </li>
+                            <li>
+                                <a href="#deleting">deleting</a>
+                            </li>
+                            <li>
+                                <a href="#fileToUpload">fileToUpload</a>
+                            </li>
+                            <li>
+                                <a href="#loading">loading</a>
+                            </li>
+                            <li>
+                                <a href="#mainDir">mainDir</a>
+                            </li>
+                            <li>
+                                <a href="#shortLink">shortLink</a>
+                            </li>
+                            <li>
+                                <a href="#user">user</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#countFiles">countFiles</a>
+                            </li>
+                            <li>
+                                <a href="#createDirExec">createDirExec</a>
+                            </li>
+                            <li>
+                                <a href="#createFileExec">createFileExec</a>
+                            </li>
+                            <li>
+                                <a href="#deleteDirExec">deleteDirExec</a>
+                            </li>
+                            <li>
+                                <a href="#deleteFileExec">deleteFileExec</a>
+                            </li>
+                            <li>
+                                <a href="#getFiles">getFiles</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onChange">onChange</a>
+                            </li>
+                            <li>
+                                <a href="#onUpload">onUpload</a>
+                            </li>
+                            <li>
+                                <a href="#toDirectory">toDirectory</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fileService: <a href="../injectables/FileService.html">FileService</a>, dataService: <a href="../injectables/ApiService.html">ApiService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/file/file.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fileService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FileService.html" target="_self" >FileService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dataService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApiService.html" target="_self" >ApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="countFiles"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            countFiles
+                        </b>
+                        <a href="#countFiles"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>countFiles(directory: <a href="../interfaces/Directory.html">Directory</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="129"
+                            class="link-to-prism">src/app/file/file.component.ts:129</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>directory</td>
+                                    <td>
+                                                <code><a href="../interfaces/Directory.html" target="_self" >Directory</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createDirExec"></a>
+                    <span class="name">
+                        <b>
+                            createDirExec
+                        </b>
+                        <a href="#createDirExec"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createDirExec(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="119"
+                            class="link-to-prism">src/app/file/file.component.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createFileExec"></a>
+                    <span class="name">
+                        <b>
+                            createFileExec
+                        </b>
+                        <a href="#createFileExec"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createFileExec(file: <a href="../interfaces/File.html">File</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/app/file/file.component.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>file</td>
+                                    <td>
+                                                <code><a href="../interfaces/File.html" target="_self" >File</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteDirExec"></a>
+                    <span class="name">
+                        <b>
+                            deleteDirExec
+                        </b>
+                        <a href="#deleteDirExec"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteDirExec($event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="107"
+                            class="link-to-prism">src/app/file/file.component.ts:107</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteFileExec"></a>
+                    <span class="name">
+                        <b>
+                            deleteFileExec
+                        </b>
+                        <a href="#deleteFileExec"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteFileExec($event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/file/file.component.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getFiles"></a>
+                    <span class="name">
+                        <b>
+                            getFiles
+                        </b>
+                        <a href="#getFiles"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getFiles()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/app/file/file.component.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="32"
+                            class="link-to-prism">src/app/file/file.component.ts:32</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onChange"></a>
+                    <span class="name">
+                        <b>
+                            onChange
+                        </b>
+                        <a href="#onChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onChange(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/file/file.component.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onUpload"></a>
+                    <span class="name">
+                        <b>
+                            onUpload
+                        </b>
+                        <a href="#onUpload"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onUpload()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/file/file.component.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toDirectory"></a>
+                    <span class="name">
+                        <b>
+                            toDirectory
+                        </b>
+                        <a href="#toDirectory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toDirectory(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, obj: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, path: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/file/file.component.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>path</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Directory.html" target="_self" >Directory</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="creatingNew"></a>
+                        <span class="name">
+                            <b>
+                            creatingNew</b>
+                            <a href="#creatingNew"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/file/file.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="deleting"></a>
+                        <span class="name">
+                            <b>
+                            deleting</b>
+                            <a href="#deleting"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/file/file.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fileToUpload"></a>
+                        <span class="name">
+                            <b>
+                            fileToUpload</b>
+                            <a href="#fileToUpload"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/File.html" target="_self" >File</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>null</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/file/file.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loading"></a>
+                        <span class="name">
+                            <b>
+                            loading</b>
+                            <a href="#loading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/file/file.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mainDir"></a>
+                        <span class="name">
+                            <b>
+                            mainDir</b>
+                            <a href="#mainDir"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Directory.html" target="_self" >Directory</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    name: &#x27;&#x27;,
+    files: [],
+    dirs: [],
+    path: &#x27;/&#x27;
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/file/file.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="shortLink"></a>
+                        <span class="name">
+                            <b>
+                            shortLink</b>
+                            <a href="#shortLink"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/file/file.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="user"></a>
+                        <span class="name">
+                            <b>
+                            user</b>
+                            <a href="#user"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/User.html" target="_self" >User</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/file/file.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit} from &#x27;@angular/core&#x27;;
+import {File} from &#x27;../file&#x27;;
+import {FileService} from &#x27;../file.service&#x27;;
+import {ApiService} from &#x27;../api.service&#x27;;
+import {User} from &#x27;../user&#x27;;
+import {Directory} from &#x27;../directory&#x27;;
+
+@Component({
+  selector: &#x27;app-file&#x27;,
+  templateUrl: &#x27;./file.component.html&#x27;,
+  styleUrls: [&#x27;./file.component.scss&#x27;]
+})
+export class FileComponent implements OnInit {
+
+  user: User;
+  mainDir: Directory &#x3D; {
+    name: &#x27;&#x27;,
+    files: [],
+    dirs: [],
+    path: &#x27;/&#x27;
+  };
+  shortLink &#x3D; &#x27;&#x27;;
+  loading &#x3D; false; // Flag variable
+  deleting &#x3D; false; // Flag variable
+  fileToUpload: File &#x3D; null;
+  creatingNew &#x3D; 0;
+
+  constructor(private fileService: FileService,
+              private dataService: ApiService) {
+  }
+
+  ngOnInit(): void {
+    this.user &#x3D; JSON.parse(this.dataService.getToken());
+    this.getFiles();
+  }
+
+  getFiles(): void {
+    this.fileService.getFileList(this.user.username)
+      .subscribe(data &#x3D;&gt; {
+        this.mainDir &#x3D; this.toDirectory(&#x27;&#x27;, data, &#x27;/&#x27;);
+        console.log(this.mainDir);
+      });
+  }
+
+  onChange(event): void {
+    this.fileToUpload &#x3D; event.target.files[0];
+    console.log(this.fileToUpload);
+  }
+
+  onUpload(): void {
+
+    if ((document.getElementById(&#x27;file-upload-input&#x27;) as HTMLInputElement).value &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+      return;
+    }
+
+    this.loading &#x3D; true;
+    console.log(this.fileToUpload);
+
+    this.fileService.upload2(this.fileToUpload).subscribe(
+      (event: any) &#x3D;&gt; {
+        if (typeof (event) &#x3D;&#x3D;&#x3D; &#x27;object&#x27;) {
+          this.fileToUpload &#x3D; null;
+          (document.getElementById(&#x27;file-upload-input&#x27;) as HTMLInputElement).value &#x3D; &#x27;&#x27;;
+          this.shortLink &#x3D; event.link;
+          this.loading &#x3D; false;
+        }
+      }
+    );
+  }
+
+  toDirectory(name: string, obj: any, path: string): Directory {
+    const ret: Directory &#x3D; {
+      name,
+      dirs: [],
+      files: [],
+      path: path &#x3D;&#x3D;&#x3D; &#x27;/&#x27; ? path : path + &#x27;/&#x27;
+    };
+
+    for (const file of obj.files) {
+      const sp &#x3D; file.split(&#x27;.&#x27;);
+      const f: File &#x3D; {
+        username: this.user.username,
+        filename: file.replace(/\.[^/.]+$/, &#x27;&#x27;),
+        language: &#x27;.&#x27; + sp[sp.length - 1],
+        text: &#x27;&#x27;,
+        path: path + &#x27;/&#x27; + name
+      };
+      ret.files.push(f);
+    }
+
+    for (const dir in obj.dirs) {
+      if (obj.dirs.hasOwnProperty(dir)) {
+        ret.dirs.push(this.toDirectory(dir, obj.dirs[dir], ret.path + name));
+      }
+    }
+
+    return ret;
+  }
+
+  deleteFileExec($event: any): void {
+    const index &#x3D; this.mainDir.files.indexOf($event, 0);
+    if (index &gt; -1) {
+      this.mainDir.files.splice(index, 1);
+    }
+  }
+
+  deleteDirExec($event: any): void {
+    const index &#x3D; this.mainDir.dirs.indexOf($event, 0);
+    if (index &gt; -1) {
+      this.mainDir.dirs.splice(index, 1);
+    }
+  }
+
+  createFileExec(file: File): void {
+    this.mainDir.files.push(file);
+    this.creatingNew &#x3D; 0;
+  }
+
+  createDirExec(name: string): void {
+    this.mainDir.dirs.push({
+      name,
+      dirs: [],
+      files: [],
+      path: &#x27;/&#x27;
+    });
+    this.creatingNew &#x3D; 0;
+  }
+
+  public countFiles(directory: Directory): number {
+    let count &#x3D; directory.files.length;
+    for (const dir of directory.dirs) {
+      count +&#x3D; this.countFiles(dir);
+    }
+    return count;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div id&#x3D;&quot;tray&quot;&gt;
+  &lt;button (click)&#x3D;&quot;creatingNew &#x3D; 2&quot; style&#x3D;&quot;margin-right: 10px;&quot;&gt;Create A New File&lt;/button&gt;
+  &lt;button (click)&#x3D;&quot;creatingNew &#x3D; 1&quot; id&#x3D;&quot;myBtn&quot; style&#x3D;&quot;margin-left: 10px;&quot;&gt;Create New Directory&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;container&quot;&gt;
+  {{mainDir.dirs.length}} directories, {{mainDir.files.length}} files (Total {{countFiles(mainDir)}} files):
+&lt;/div&gt;
+
+&lt;app-file-dir-card *ngIf&#x3D;&quot;creatingNew !&#x3D;&#x3D; 0&quot; [parentPath]&#x3D;&quot;&#x27;&#x27;&quot; [isNew]&#x3D;&quot;true&quot; [isFile]&#x3D;&quot;creatingNew &#x3D;&#x3D;&#x3D; 2&quot; (createFile)&#x3D;&quot;createFileExec($event)&quot; (createDir)&#x3D;&quot;createDirExec($event)&quot; (cancelled)&#x3D;&quot;creatingNew &#x3D; 0&quot; [parentDirs]&#x3D;&quot;this.mainDir.dirs&quot; [parentFiles]&#x3D;&quot;this.mainDir.files&quot;&gt;&lt;/app-file-dir-card&gt;
+&lt;app-file-dir-card *ngFor&#x3D;&quot;let dir of mainDir.dirs&quot; [isFile]&#x3D;&quot;false&quot; [directory]&#x3D;&quot;dir&quot; [level]&#x3D;&quot;0&quot; [trace]&#x3D;&quot;[mainDir.dirs.indexOf(dir)]&quot; (deleteDir)&#x3D;&quot;deleteDirExec($event)&quot; (deleteFile)&#x3D;&quot;deleteFileExec($event)&quot; [isNew]&#x3D;&quot;false&quot; [noEdits]&#x3D;&quot;dir.name &#x3D;&#x3D;&#x3D; &#x27;attempts&#x27;&quot;&gt;&lt;/app-file-dir-card&gt;
+&lt;app-file-dir-card *ngFor&#x3D;&quot;let file of mainDir.files&quot; [isFile]&#x3D;&quot;true&quot; [file]&#x3D;&quot;file&quot; [level]&#x3D;&quot;0&quot; [trace]&#x3D;&quot;[mainDir.files.indexOf(file)]&quot; (deleteDir)&#x3D;&quot;deleteDirExec($event)&quot; (deleteFile)&#x3D;&quot;deleteFileExec($event)&quot; [isNew]&#x3D;&quot;false&quot;&gt;&lt;/app-file-dir-card&gt;
+
+&lt;!--&lt;div [class.open]&#x3D;&quot;uploadPopupActive&quot; id&#x3D;&quot;file-upload-cover&quot;&gt;&lt;/div&gt;--&gt;
+
+&lt;!--&lt;div [class.open]&#x3D;&quot;uploadPopupActive&quot; id&#x3D;&quot;file-upload-popup&quot;&gt;--&gt;
+&lt;!--  &lt;p&gt;Upload a file:&lt;/p&gt;--&gt;
+&lt;!--  &lt;input (change)&#x3D;&quot;onChange($event)&quot; id&#x3D;&quot;file-upload-input&quot; type&#x3D;&quot;file&quot;&gt;--&gt;
+&lt;!--  &lt;div *ngIf&#x3D;&quot;shortLink !&#x3D;&#x3D; &#x27;&#x27;&quot; style&#x3D;&quot;margin-top: 10px&quot;&gt;--&gt;
+&lt;!--    &lt;a href&#x3D;&quot;{{shortLink}}&quot; target&#x3D;&quot;_blank&quot;&gt;Link to last upload&lt;/a&gt;--&gt;
+&lt;!--  &lt;/div&gt;--&gt;
+&lt;!--  &lt;p *ngIf&#x3D;&quot;!loading&quot;&gt;--&gt;
+&lt;!--    &lt;button (click)&#x3D;&quot;uploadPopupActive &#x3D; false;&quot; id&#x3D;&quot;upload-cancel-btn&quot;&gt;Close&lt;/button&gt;--&gt;
+&lt;!--    &lt;button (click)&#x3D;&quot;onUpload()&quot; id&#x3D;&quot;file-upload-btn&quot; [class.disabled]&#x3D;&quot;fileToUpload &#x3D;&#x3D; null || fileToUpload &#x3D;&#x3D; undefined&quot;&gt;Upload&lt;/button&gt;--&gt;
+&lt;!--  &lt;/p&gt;--&gt;
+&lt;!--  &lt;p *ngIf&#x3D;&quot;loading&quot; style&#x3D;&quot;margin-top: 20px; text-align: center&quot;&gt;--&gt;
+&lt;!--    Uploading...--&gt;
+&lt;!--  &lt;/p&gt;--&gt;
+&lt;!--&lt;/div&gt;--&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./file.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">#tray {
+  text-align: center;
+  width: 100%;
+
+  button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+.container {
+  margin-bottom: 20px;
+}
+
+.card {
+  padding: 15px;
+  background: var(--dark);
+  border-bottom: 1px solid #fff;
+
+  button {
+    float: right;
+    border: none;
+  }
+
+  .title {
+    padding: 10px 20px;
+    font-size: 1.1em;
+  }
+
+  .details {
+    margin: 10px;
+  }
+
+  .lang {
+    margin: 10px;
+  }
+}
+
+#file-upload-popup {
+  position: fixed;
+  top: calc(40vh - 100px);
+  width: 30vw;
+  left: calc(35vw - 20px);
+  border-bottom: 1px solid #ddf;
+  padding: 20px;
+  background: #224;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.25s;
+  z-index: 1000;
+
+  a {
+    font-size: 0.7em;
+  }
+
+  &amp;.open {
+    transform: none;
+    opacity: 1;
+  }
+
+  #file-upload-input {
+    font-family: inherit;
+    position: relative;
+
+    &amp;::-webkit-file-upload-button {
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #ddf;
+      padding: 5px 10px;
+      font-family: Lato, sans-serif;
+      color: #ddf;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    margin: 0 10px 20px 0;
+  }
+}
+
+#file-upload-btn, #upload-cancel-btn {
+  float: right;
+  margin: 10px 2px 0 2px;
+}
+
+#file-upload-cover {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  transition: all 0.25s;
+
+  &amp;.open {
+    display: block;
+    background: #0015;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div id="tray">  <button (click)="creatingNew = 2" style="margin-right: 10px;">Create A New File</button>  <button (click)="creatingNew = 1" id="myBtn" style="margin-left: 10px;">Create New Directory</button></div><div class="container">  {{mainDir.dirs.length}} directories, {{mainDir.files.length}} files (Total {{countFiles(mainDir)}} files):</div><app-file-dir-card *ngIf="creatingNew !== 0" [parentPath]="\'\'" [isNew]="true" [isFile]="creatingNew === 2" (createFile)="createFileExec($event)" (createDir)="createDirExec($event)" (cancelled)="creatingNew = 0" [parentDirs]="this.mainDir.dirs" [parentFiles]="this.mainDir.files"></app-file-dir-card><app-file-dir-card *ngFor="let dir of mainDir.dirs" [isFile]="false" [directory]="dir" [level]="0" [trace]="[mainDir.dirs.indexOf(dir)]" (deleteDir)="deleteDirExec($event)" (deleteFile)="deleteFileExec($event)" [isNew]="false" [noEdits]="dir.name === \'attempts\'"></app-file-dir-card><app-file-dir-card *ngFor="let file of mainDir.files" [isFile]="true" [file]="file" [level]="0" [trace]="[mainDir.files.indexOf(file)]" (deleteDir)="deleteDirExec($event)" (deleteFile)="deleteFileExec($event)" [isNew]="false"></app-file-dir-card><!--<div [class.open]="uploadPopupActive" id="file-upload-cover"></div>--><!--<div [class.open]="uploadPopupActive" id="file-upload-popup">--><!--  <p>Upload a file:</p>--><!--  <input (change)="onChange($event)" id="file-upload-input" type="file">--><!--  <div *ngIf="shortLink !== \'\'" style="margin-top: 10px">--><!--    <a href="{{shortLink}}" target="_blank">Link to last upload</a>--><!--  </div>--><!--  <p *ngIf="!loading">--><!--    <button (click)="uploadPopupActive = false;" id="upload-cancel-btn">Close</button>--><!--    <button (click)="onUpload()" id="file-upload-btn" [class.disabled]="fileToUpload == null || fileToUpload == undefined">Upload</button>--><!--  </p>--><!--  <p *ngIf="loading" style="margin-top: 20px; text-align: center">--><!--    Uploading...--><!--  </p>--><!--</div>--></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ArenaComponent', 'selector': 'app-arena'},{'name': 'FileComponent', 'selector': 'app-file'},{'name': 'FileDirCardComponent', 'selector': 'app-file-dir-card'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'IdeCompileComponent', 'selector': 'app-ide-compile'},{'name': 'IdeComponent', 'selector': 'app-ide'},{'name': 'InputComponent', 'selector': 'app-input'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SaveFileComponent', 'selector': 'app-save-file'},{'name': 'SubmitTryCodeComponent', 'selector': 'app-submit-try-code'},{'name': 'UserComponent', 'selector': 'app-user'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'FileComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'FileComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

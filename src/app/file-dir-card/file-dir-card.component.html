@@ -1,0 +1,52 @@
+<div [style.background]="isFile ? '#002' : '#022'" [style.marginLeft]="level * 20 + 'px'" class="card">
+  <div *ngIf="!isNew && isFile" class="title">{{file.filename}}{{file.language}}</div>
+  <div *ngIf="!isNew && !isFile" class="title">{{directory.name}}</div>
+  <div *ngIf="!isNew && !isFile" class="dir-desc">{{directory.dirs.length}} directories, {{directory.files.length}}
+    files
+  </div>
+
+  <div *ngIf="isNew" class="title">
+    <input (input)="isErrorCreating = false" [(ngModel)]="newName" [disabled]="creating" [placeholder]="'Name of new ' + (isFile ? 'file' : 'directory')"
+           id="newFilenameInput" type="text">
+    <label (click)="lang = (lang + 1) % 3" *ngIf="isFile" for="newFilenameInput">{{extensions[lang]}}</label>
+  </div>
+
+  <div *ngIf="isNew || isFile"></div>
+  <div *ngIf="!isNew" class="file-buttons">
+    <button *ngIf="!noEdits" (click)="onDelete()" [class.disabled]="deleting || isErrorDeleting"
+            [disabled]="deleting || isErrorDeleting">{{isErrorDeleting ? 'Error' : (deleting ? 'Deleting...' : 'Delete')}}</button>
+    <button (click)="isExpanded = !isExpanded" *ngIf="!isFile">{{isExpanded ? 'Collapse' : 'Expand'}}</button>
+    <button (click)="isExpanded = true; creatingNewSub = 1" *ngIf="!noEdits && !isFile && level < 3" [class.disabled]="deleting" [disabled]="deleting">New Directory</button>
+    <button (click)="isExpanded = true; creatingNewSub = 2" *ngIf="!noEdits && !isFile" [class.disabled]="deleting" [disabled]="deleting">New File</button>
+    <button *ngIf="!noEdits && isFile" [class.disabled]="deleting" [disabled]="deleting"
+            [routerLink]="getRouterLink()">Edit
+    </button>
+  </div>
+
+  <div *ngIf="isNew" class="file-buttons">
+    <button (click)="cancelled.emit(true)" [class.disabled]="creating" [disabled]="creating">Cancel</button>
+    <button (click)="isFile ? onCreateFile() : onCreateDir()"
+            [class.disabled]="newName==='' || present(newName) || creating || isErrorCreating"
+            [disabled]="newName==='' || present(newName) || creating || isErrorCreating">{{isErrorCreating ? 'Error' : (creating ? 'Creating...' : 'Create')}}</button>
+  </div>
+
+</div>
+
+<div *ngIf="!isNew && !isFile" [style.display]="isExpanded ? 'block' : 'none'" class="subs">
+
+  <app-file-dir-card (cancelled)="creatingNewSub = 0" (createDir)="createDirExec($event)"
+                     (createFile)="createFileExec($event)"
+                     *ngIf="creatingNewSub !== 0" [isFile]="creatingNewSub === 2" [isNew]="true"
+                     [parentDirs]="this.directory.dirs" [parentFiles]="this.directory.files"
+                     [level]="level + 1" [parentPath]="directory.path + directory.name + '/'"></app-file-dir-card>
+
+  <app-file-dir-card (deleteDir)="deleteDirExec($event)" (deleteFile)="deleteFileExec($event)"
+                     *ngFor="let dir of directory.dirs" [directory]="dir"
+                     [isFile]="false" [isNew]="false" [level]="level + 1"
+                     [trace]="addToTraceDir(dir)" [noEdits]="noEdits"></app-file-dir-card>
+
+  <app-file-dir-card (deleteDir)="deleteDirExec($event)" (deleteFile)="deleteFileExec($event)"
+                     *ngFor="let file of directory.files" [file]="file"
+                     [isFile]="true" [isNew]="false" [level]="level + 1"
+                     [trace]="addToTraceFile(file)" [noEdits]="noEdits"></app-file-dir-card>
+</div>

@@ -1,0 +1,29 @@
+<div id="tray">
+  <button (click)="creatingNew = 2" style="margin-right: 10px;">Create A New File</button>
+  <button (click)="creatingNew = 1" id="myBtn" style="margin-left: 10px;">Create New Directory</button>
+</div>
+
+<div class="container">
+  {{mainDir.dirs.length}} directories, {{mainDir.files.length}} files (Total {{countFiles(mainDir)}} files):
+</div>
+
+<app-file-dir-card *ngIf="creatingNew !== 0" [parentPath]="''" [isNew]="true" [isFile]="creatingNew === 2" (createFile)="createFileExec($event)" (createDir)="createDirExec($event)" (cancelled)="creatingNew = 0" [parentDirs]="this.mainDir.dirs" [parentFiles]="this.mainDir.files"></app-file-dir-card>
+<app-file-dir-card *ngFor="let dir of mainDir.dirs" [isFile]="false" [directory]="dir" [level]="0" [trace]="[mainDir.dirs.indexOf(dir)]" (deleteDir)="deleteDirExec($event)" (deleteFile)="deleteFileExec($event)" [isNew]="false" [noEdits]="dir.name === 'attempts'"></app-file-dir-card>
+<app-file-dir-card *ngFor="let file of mainDir.files" [isFile]="true" [file]="file" [level]="0" [trace]="[mainDir.files.indexOf(file)]" (deleteDir)="deleteDirExec($event)" (deleteFile)="deleteFileExec($event)" [isNew]="false"></app-file-dir-card>
+
+<!--<div [class.open]="uploadPopupActive" id="file-upload-cover"></div>-->
+
+<!--<div [class.open]="uploadPopupActive" id="file-upload-popup">-->
+<!--  <p>Upload a file:</p>-->
+<!--  <input (change)="onChange($event)" id="file-upload-input" type="file">-->
+<!--  <div *ngIf="shortLink !== ''" style="margin-top: 10px">-->
+<!--    <a href="{{shortLink}}" target="_blank">Link to last upload</a>-->
+<!--  </div>-->
+<!--  <p *ngIf="!loading">-->
+<!--    <button (click)="uploadPopupActive = false;" id="upload-cancel-btn">Close</button>-->
+<!--    <button (click)="onUpload()" id="file-upload-btn" [class.disabled]="fileToUpload == null || fileToUpload == undefined">Upload</button>-->
+<!--  </p>-->
+<!--  <p *ngIf="loading" style="margin-top: 20px; text-align: center">-->
+<!--    Uploading...-->
+<!--  </p>-->
+<!--</div>-->

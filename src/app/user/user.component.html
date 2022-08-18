@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="card" id="user_cred">
+    <div id="grid1">
+      <img alt="Profile Icon" id="profile-icon" src="{{user.img_url}}">
+      <div class="name-and-id">
+        <div class="tc">
+          <div>{{user.name}}</div>
+          <div>{{user.email}}</div>
+          <div class="inline-code">{{user.username}}</div>
+          <div class="inline-code"><i class="lnr lnr-star"></i> {{user.rating}}</div>
+          <div>
+            <a href="" id="edit">
+              <button>Edit Details</button>
+            </a>
+            <a (click)="logout()" href="" id=" Logout">
+              <button>Logout</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <table id="stats">
+      <tr>
+        <td>Total Attempts</td>
+        <td>{{user.n_attempts}}</td>
+      </tr>
+      <tr>
+        <td>Accepted Submissions</td>
+        <td>{{hist[hist.length - 1]}} ({{hist[hist.length - 1] / user.n_attempts * 100 | number : '1.2-2'}}%)</td>
+      </tr>
+      <tr>
+        <td>Attempt Summary:</td>
+      </tr>
+    </table>
+    <div id="canvas">
+      <canvas height="100px" id="myChart" width="100px"></canvas>
+    </div>
+  </div>
+</div>

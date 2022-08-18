@@ -1,0 +1,897 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>temp documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	    <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">temp documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="./">temp documentation</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="./"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a href="./" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="./overview.html" 
+                                         href="./overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="./modules.html" >
+                            <span class="fa fa-archive"></span>
+                            <span>Modules</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            ></span>
+                        </a>
+                        <ul class="links collapse in"
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="modules/AppModule.html" >AppModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-components-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="components/AppComponent.html" >AppComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="components/ArenaComponent.html" >ArenaComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="components/FileComponent.html" >FileComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="components/FileDirCardComponent.html" >FileDirCardComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="components/HeaderComponent.html" >HeaderComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="components/HomeComponent.html" >HomeComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="components/IdeCompileComponent.html" >IdeCompileComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="components/IdeComponent.html" >IdeComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="components/InputComponent.html" >InputComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="components/LoginComponent.html" >LoginComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="components/RegisterComponent.html" >RegisterComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="components/SaveFileComponent.html" >SaveFileComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="components/SubmitTryCodeComponent.html" >SubmitTryCodeComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="components/UserComponent.html" >UserComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-classes-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="classes/AppPage.html" >AppPage</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-injectables-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="injectables/ApiService.html" >ApiService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="injectables/AuthGuard.html" >AuthGuard</a>
+                                </li>
+                                <li class="link">
+                                    <a href="injectables/FileService.html" >FileService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="injectables/ProblemService.html" >ProblemService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="injectables/QuestionService.html" >QuestionService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="injectables/RunCodeService.html" >RunCodeService</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-interfaces-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="interfaces/Directory.html" >Directory</a>
+                                </li>
+                                <li class="link">
+                                    <a href="interfaces/File.html" >File</a>
+                                </li>
+                                <li class="link">
+                                    <a href="interfaces/Problem.html" >Problem</a>
+                                </li>
+                                <li class="link">
+                                    <a href="interfaces/Question.html" >Question</a>
+                                </li>
+                                <li class="link">
+                                    <a href="interfaces/User.html" >User</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="./miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="./coverage.html"  class="active" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+                    <li class="divider"></li>
+                    <li class="copyright">
+                            Documentation generated using <a href="https://compodoc.github.io/compodoc/" target="_blank">
+                                        <img src=".//images/compodoc-vectorise.svg" class="img-responsive">
+                            </a>
+                    </li>
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="./">temp documentation</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="./"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a href="./" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="./overview.html" 
+                                                href="./overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="./modules.html" >
+                                   <span class="fa fa-archive"></span>
+                                   <span>Modules</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   ></span>
+                               </a>
+                               <ul class="links collapse in"
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="modules/AppModule.html" >AppModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#components-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="components/ArenaComponent.html" >ArenaComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="components/FileComponent.html" >FileComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="components/FileDirCardComponent.html" >FileDirCardComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="components/HeaderComponent.html" >HeaderComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="components/HomeComponent.html" >HomeComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="components/IdeCompileComponent.html" >IdeCompileComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="components/IdeComponent.html" >IdeComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="components/InputComponent.html" >InputComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="components/LoginComponent.html" >LoginComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="components/RegisterComponent.html" >RegisterComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="components/SaveFileComponent.html" >SaveFileComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="components/SubmitTryCodeComponent.html" >SubmitTryCodeComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="components/UserComponent.html" >UserComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#classes-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="classes/AppPage.html" >AppPage</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#injectables-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="injectables/ApiService.html" >ApiService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="injectables/AuthGuard.html" >AuthGuard</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="injectables/FileService.html" >FileService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="injectables/ProblemService.html" >ProblemService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="injectables/QuestionService.html" >QuestionService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="injectables/RunCodeService.html" >RunCodeService</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#interfaces-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="interfaces/Directory.html" >Directory</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="interfaces/File.html" >File</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="interfaces/Problem.html" >Problem</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="interfaces/Question.html" >Question</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="interfaces/User.html" >User</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="./miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="./coverage.html"  class="active" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                           <li class="copyright">
+                                   Documentation generated using <a href="https://compodoc.github.io/compodoc/" target="_blank">
+                                               <img src=".//images/compodoc-vectorise.svg" class="img-responsive">
+                                   </a>
+                           </li>
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content coverage">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Documentation coverage</li> 
+</ol>
+
+<div class="coverage-badge">
+    <span>Project</span>
+    <span class="count low">16%</span>
+</div>
+
+<table class="table table-bordered coverage">
+    <thead class="coverage-header">
+        <tr>
+            <th>File</th>
+            <th>Type</th>
+            <th>Identifier</th>
+            <th style="text-align:right">Statements</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="low">
+            <td>
+                <a href="./classes/AppPage.html">e2e/src/app.po.ts</a>
+            </td>
+            <td>
+                classe
+            </td>
+            <td>
+                AppPage
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./injectables/ApiService.html">src/app/api.service.ts</a>
+            </td>
+            <td>
+                injectable
+            </td>
+            <td>
+                ApiService
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/8)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./components/AppComponent.html">src/app/app.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                AppComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./components/ArenaComponent.html">src/app/arena/arena.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                ArenaComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">23 %</span>
+                <span class="coverage-count">(3/13)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./injectables/AuthGuard.html">src/app/auth.guard.ts</a>
+            </td>
+            <td>
+                injectable
+            </td>
+            <td>
+                AuthGuard
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/Directory.html">src/app/directory.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                Directory
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./components/FileDirCardComponent.html">src/app/file-dir-card/file-dir-card.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                FileDirCardComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">25 %</span>
+                <span class="coverage-count">(10/39)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./injectables/FileService.html">src/app/file.service.ts</a>
+            </td>
+            <td>
+                injectable
+            </td>
+            <td>
+                FileService
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/13)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/File.html">src/app/file.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                File
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/5)</span>
+            </td>
+        </tr>
+        <tr class="medium">
+            <td>
+                <a href="./components/FileComponent.html">src/app/file/file.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                FileComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">41 %</span>
+                <span class="coverage-count">(7/17)</span>
+            </td>
+        </tr>
+        <tr class="medium">
+            <td>
+                <a href="./components/HeaderComponent.html">src/app/header/header.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                HeaderComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">33 %</span>
+                <span class="coverage-count">(1/3)</span>
+            </td>
+        </tr>
+        <tr class="medium">
+            <td>
+                <a href="./components/HomeComponent.html">src/app/home/home.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                HomeComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">45 %</span>
+                <span class="coverage-count">(5/11)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./components/IdeCompileComponent.html">src/app/ide-compile/ide-compile.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                IdeCompileComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">25 %</span>
+                <span class="coverage-count">(1/4)</span>
+            </td>
+        </tr>
+        <tr class="medium">
+            <td>
+                <a href="./components/IdeComponent.html">src/app/ide/ide.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                IdeComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">31 %</span>
+                <span class="coverage-count">(6/19)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./components/InputComponent.html">src/app/input/input.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                InputComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">20 %</span>
+                <span class="coverage-count">(1/5)</span>
+            </td>
+        </tr>
+        <tr class="medium">
+            <td>
+                <a href="./components/LoginComponent.html">src/app/login/login.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                LoginComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">27 %</span>
+                <span class="coverage-count">(3/11)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./injectables/ProblemService.html">src/app/problem.service.ts</a>
+            </td>
+            <td>
+                injectable
+            </td>
+            <td>
+                ProblemService
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/1)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/Problem.html">src/app/problem.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                Problem
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/9)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./injectables/QuestionService.html">src/app/question.service.ts</a>
+            </td>
+            <td>
+                injectable
+            </td>
+            <td>
+                QuestionService
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/Question.html">src/app/question.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                Question
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/9)</span>
+            </td>
+        </tr>
+        <tr class="good">
+            <td>
+                <a href="./components/RegisterComponent.html">src/app/register/register.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                RegisterComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">61 %</span>
+                <span class="coverage-count">(8/13)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./injectables/RunCodeService.html">src/app/run-code.service.ts</a>
+            </td>
+            <td>
+                injectable
+            </td>
+            <td>
+                RunCodeService
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/8)</span>
+            </td>
+        </tr>
+        <tr class="medium">
+            <td>
+                <a href="./components/SaveFileComponent.html">src/app/save-file/save-file.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                SaveFileComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">37 %</span>
+                <span class="coverage-count">(3/8)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./components/SubmitTryCodeComponent.html">src/app/submit-try-code/submit-try-code.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                SubmitTryCodeComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">25 %</span>
+                <span class="coverage-count">(2/8)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/User.html">src/app/user.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                User
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/10)</span>
+            </td>
+        </tr>
+        <tr class="medium">
+            <td>
+                <a href="./components/UserComponent.html">src/app/user/user.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                UserComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">28 %</span>
+                <span class="coverage-count">(2/7)</span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/search/search.js"></script>
+       <script src="./js/search/lunr.min.js"></script>
+       <script src="./js/search/search-lunr.js"></script>
+
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/highlight.pack.js"></script>
+       <script src="./js/libs/highlightjs-line-numbers.min.js"></script>
+       <script src="./js/search/search_index.js"></script>
+       <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                hljs.initHighlightingOnLoad();
+                hljs.initLineNumbersOnLoad();
+            });
+       </script>
+
+    </body>
+</html>
